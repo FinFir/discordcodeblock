@@ -1,7 +1,7 @@
 body {
     background-color: #1e1e1e;
     color: #c7c7c7;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,22 +11,38 @@ body {
 
 .container {
     text-align: center;
+    background-color: #2b2b2b;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
 }
 
 h1 {
     margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
 }
 
 textarea {
-    width: 300px;
-    height: 100px;
+    width: calc(100% - 20px);
+    height: 150px;
     border-radius: 8px;
     border: 1px solid #444;
-    background-color: #2e2e2e;
+    background-color: #3b3b3b;
     color: #c7c7c7;
     padding: 10px;
     margin-bottom: 20px;
     resize: none;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -37,6 +53,7 @@ button {
     color: white;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -46,8 +63,10 @@ button:hover {
 .output {
     margin-top: 20px;
     white-space: pre-wrap;
-    background-color: #2e2e2e;
+    background-color: #3b3b3b;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #444;
+    color: #c7c7c7;
+    font-family: 'Courier New', Courier, monospace;
 }
